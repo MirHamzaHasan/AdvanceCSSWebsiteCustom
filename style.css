@@ -1,0 +1,97 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 1.7;
+    color : #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image : linear-gradient(to right bottom , rgba(184, 252, 96, 0.6),rgba(17, 117, 75, 0.6)), 
+    url(./img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0 , 100% 0 , 100% 70%, 0 100%);
+    position: relative;
+}
+
+.logo-image {
+    position: absolute;
+    left: 40px;
+    top : 40px;
+}
+
+.logo-image img{
+    height: 35px;
+}
+.slogan {
+    position: absolute;
+    left: 50%;
+    top : 40%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+}
+.slogan h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 30px;
+    display: block;
+    text-align: center;
+    animation: EaseRightIn 1s ease-out;
+}
+
+.slogan h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(252, 244, 141);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 12px;
+    display: block;
+    animation: EaseLeftIn 1s ease-out;
+}
+
+@keyframes EaseRightIn{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+
+    70%{
+        transform: translate(30px);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes EaseLeftIn{
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    70%{
+        transform: translate(-30px);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
