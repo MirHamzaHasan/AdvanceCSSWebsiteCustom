@@ -27,13 +27,13 @@ body {
     position: relative;
 }
 
-.logo-image {
+.header__logo-image {
     position: absolute;
     left: 4rem;
     top : 4rem;
 }
 
-.logo-image img{
+.header__logo-image img{
     height: 3.5rem;
 }
 .slogan {
@@ -87,7 +87,7 @@ body {
     box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.4);
 }
 
-.btn-white{
+.btn--white{
     background-color: white;
     color:black;
 }
