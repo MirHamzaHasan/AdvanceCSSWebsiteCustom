@@ -20,7 +20,7 @@ body {
 .header {
     height: 95vh;
     background-image : linear-gradient(to right bottom , rgba(184, 252, 96, 0.6),rgba(17, 117, 75, 0.6)), 
-    url(./img/hero.jpg);
+    url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0 , 100% 0 , 100% 70%, 0 100%);

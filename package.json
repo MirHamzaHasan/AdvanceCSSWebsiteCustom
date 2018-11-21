@@ -1,0 +1,22 @@
+{
+  "name": "advancecsswebsitecustom",
+  "version": "1.0.0",
+  "description": "Custom CSS website design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirHamzaHasan/AdvanceCSSWebsiteCustom.git"
+  },
+  "author": "Mir Hamza Hasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MirHamzaHasan/AdvanceCSSWebsiteCustom/issues"
+  },
+  "homepage": "https://github.com/MirHamzaHasan/AdvanceCSSWebsiteCustom#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
