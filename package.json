@@ -4,7 +4,9 @@
   "description": "Custom CSS website design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css" : "node-sass scss/main.scss css/style.css -w ",
+    "start": "live-server & npm run build-css"
   },
   "repository": {
     "type": "git",
