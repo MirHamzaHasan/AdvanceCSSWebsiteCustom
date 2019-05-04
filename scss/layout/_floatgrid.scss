@@ -1,0 +1,34 @@
+
+.row{
+    max-width: 1140px;
+    background-color: gray;
+    margin: 0 auto;
+    
+    &:not(:last-child){
+        margin-bottom: $vertical-space;
+    }
+    [class^="col-"]{
+        
+        float: left;
+        &:not(:last-child){
+            margin-right: $horizontal-space;
+        }
+    }
+    .col-1-of-2{
+        background-color: red;
+        width: calc((100% - (#{$horizontal-space} *  1 ) ) / 2);;
+       
+    }
+
+    .col-1-of-3{
+        background-color: green;
+        width: calc((100% -  (#{$horizontal-space} *  2 ) ) / 3);;
+       
+    }
+
+    .col-1-of-4{
+        background-color: blue;
+        width: calc((100% -  (#{$horizontal-space} * 3))/4);;
+    }
+    @include clearfix;
+}

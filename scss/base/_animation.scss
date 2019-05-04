@@ -1,0 +1,43 @@
+@keyframes EaseRightIn{
+    0%{
+        opacity: 0;
+        transform: translate(-10rem);
+    }
+
+    70%{
+        transform: translate(3rem);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes EaseLeftIn{
+    0%{
+        opacity: 0;
+        transform: translate(10rem);
+    }
+
+    70%{
+        transform: translate(-3rem);
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveUpEase{
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

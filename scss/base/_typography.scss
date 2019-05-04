@@ -1,0 +1,26 @@
+.slogan {
+    position: absolute;
+    left: 50%;
+    top : 40%;
+    transform: translate(-50%,-50%);
+    backface-visibility: hidden;
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        color: white;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3rem;
+        display: block;
+        animation: EaseRightIn 1s ease-out;
+    }
+    h2{
+        text-transform: uppercase;
+        color: rgb(252, 244, 141);
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1.2rem;
+        display: block;
+        animation: EaseLeftIn 1s ease-out;
+    }
+}

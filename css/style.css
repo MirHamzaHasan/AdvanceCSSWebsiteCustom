@@ -15,20 +15,6 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(184, 252, 96, 0.6), rgba(17, 117, 75, 0.6)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  position: relative; }
-  .header__logo-image {
-    position: absolute;
-    left: 4rem;
-    top: 4rem; }
-    .header__logo-image img {
-      height: 3.5rem; }
-
 .slogan {
   position: absolute;
   left: 50%;
@@ -53,6 +39,36 @@ body {
     display: block;
     animation: EaseLeftIn 1s ease-out; }
 
+@keyframes EaseRightIn {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem); }
+  70% {
+    transform: translate(3rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes EaseLeftIn {
+  0% {
+    opacity: 0;
+    transform: translate(10rem); }
+  70% {
+    transform: translate(-3rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes MoveUpEase {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/* About Section Variables*/
+/* About Section Variables*/
 .btn {
   backface-visibility: hidden; }
   .btn:link, .btn:visited {
@@ -94,30 +110,45 @@ body {
     z-index: -1;
     transition: all 0.6s ease-out; }
 
-@keyframes EaseRightIn {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem); }
-  70% {
-    transform: translate(3rem); }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
+.row {
+  max-width: 1140px;
+  background-color: gray;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    background-color: red;
+    width: calc((100% - (2rem *  1 ) ) / 2); }
+  .row .col-1-of-3 {
+    background-color: green;
+    width: calc((100% -  (2rem *  2 ) ) / 3); }
+  .row .col-1-of-4 {
+    background-color: blue;
+    width: calc((100% -  (2rem * 3))/4); }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
 
-@keyframes EaseLeftIn {
-  0% {
-    opacity: 0;
-    transform: translate(10rem); }
-  70% {
-    transform: translate(-3rem); }
-  100% {
-    transform: translate(0);
-    opacity: 1; } }
+.about {
+  background-color: rgba(226, 223, 223, 0.3);
+  padding: 35rem 0;
+  margin-top: -20vh; }
 
-@keyframes MoveUpEase {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(184, 252, 96, 0.6), rgba(17, 117, 75, 0.6)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header__logo-image {
+    position: absolute;
+    left: 4rem;
+    top: 4rem; }
+    .header__logo-image img {
+      height: 3.5rem; }
